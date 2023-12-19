@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="container">
+            <div class="progress">
+                <div class="circle">1</div>
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+            </div>
+            <div class="card active">
+                <h2 class="head">Sign up</h2>
+                <div class="labelCon"><label for="name">Name:</label>
+                    <p class="err"></p>
+                </div>
+                <input type="text" id="name" class="firstInput">
+                <div class="labelCon"><label for="email">E-mail:</label>
+                    <p class="err"></p>
+                </div>
+                <input type="email" id="email" class="firstInput">
+                <div class="labelCon"><label for="number">Number:</label>
+                    <p class="err"></p>
+                </div>
+                <input type="number" id="number" class="firstInput">
+                <div class="pagetoggle">
+                    <button id="one">Next</button>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <h2 class="head">Select Plan</h2>
+                <div class="btns">
+                    <div class="plan average">$50/mo</div>
+                    <div class="plan good">$100/3mo</div>
+                    <div class="plan excellent">$500/yr</div>
+                </div>
+                <p id="errtwo"></p>
+                <div class="pagetoggle">
+                    <button id="prev">Previous</button><button id="two">Next</button>
+                </div>
+
+            </div>
+            <div class="card">
+                <h2 id="finalH"></h2>
+                <p id="finalP">You have selected the <span id="final"></span> plan. To confirm this please hit the
+                    confirm button</p>
+                <div class="pagetoggle">
+                    <button id="prevTwo" onclick="prevBtn()">Previous</button>
+                    <button id="confirm">confirm</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

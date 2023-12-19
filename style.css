@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: rgb(245, 246, 228);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    width: 40%;
+}
+
+.card {
+    border: 0.5px solid grey;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.204);
+    display: none;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.progress {
+    border: 0.5px solid grey;
+    background-color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.204);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(235, 239, 245);
+    border-radius: 50%;
+    color: rgb(0, 153, 255);
+}
+
+.circle.done {
+    background-color: rgb(236, 44, 224);
+    color: white;
+}
+
+.card.active {
+    display: flex;
+}
+
+.btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.plan {
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 153, 255);
+}
+
+.plan:hover {
+    cursor: pointer;
+    border: 2px solid rgb(236, 44, 224);
+}
+
+.plan.clicked {
+    background-color: rgba(102, 51, 153, 0.541);
+    color: white;
+    border: none;
+}
+
+.pagetoggle {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 10px;
+}
+
+.pagetoggle button {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(236, 44, 224);
+    position: relative;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.346);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.pagetoggle button:hover {
+    cursor: pointer;
+    background-color: rgba(236, 44, 223, 0.58);
+    color: black;
+}
+
+.card input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(235, 239, 245);
+}
+
+.card input :focus {
+    border: 1px solid rgb(236, 44, 224);
+}
+
+label {
+    color: rgb(0, 153, 255);
+}
+
+#finalP {
+    font-size: 1.2rem;
+    height: 150px;
+    text-align: center;
+    padding: 10px;
+}
+
+#finalH {
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.labelCon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.err {
+    color: red;
+    font-size: 15px;
+}
+
+#errtwo {
+    color: red;
+}
+
+.head{
+    font-size: 2rem;
+    color: rgb(0, 153, 255);
+}
+
+@media screen and (min-width: 1500px){
+
+    .container{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width : 500px){
+    .container{
+        width: 80%;
+    }
+
+    .plan{
+        font-size: 12px;
+    }
+
+    .pagetoggle{
+        gap: 20px;
+    }
+
+    .plan{
+        margin: 3px;
+    }
+}
